@@ -10,7 +10,7 @@ struct Node{
    Node *father;
 };
 
-//Prototipo de funcion
+//Prototipo de función
 void menu();
 Node *createNode(int, Node *);
 void insertNode(Node *&, int, Node *);
@@ -59,6 +59,7 @@ void menu(){
 // al momento que hemos insertado un nuevo elemento en el arbol, tambien hay 
 // que referenciar quien es el padre de este elemento(nodo), 
 // como no lo sabemos por eso le ponemos NULL
+
 		            cout<<"\n";
 					system("pause");
 		            break;
@@ -106,7 +107,8 @@ void menu(){
 
 //Definicion de la funcion: createNode()
 Node *createNode(int n, Node *father){
-//con cada nodo que vayamos creando vamos a indicarle quien es el nodo padre	
+//con cada nodo que vayamos creando vamos a indicarle quien es el nodo padre
+	
    Node *new_node = new Node();
    
    new_node -> data = n;
